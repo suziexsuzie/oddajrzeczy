@@ -1,0 +1,20 @@
+@import "settings/colors";
+@import "settings/fonts";
+@import "settings/breakpoints";
+
+@import "header";
+
+
+body {
+  font-family: $font-base;
+}
+
+
+.container {
+  @include desktop {
+    .container {
+      width: 80%;
+      max-width: 1100px;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+$xs: "(max-width: 575x)";
+$sm: "(min-width: 576x)";
+$md: "(min-width: 768px)";
+$lg: "(min-width: 992px)";
+$xl: "(min-width: 1200px)";
+$xxl: "(min-width: 1400px)";
+
+@mixin smartphone {
+  @media #{$xs} {
+    @content
+  }
+}
+
+;
+
+@mixin tablet {
+  @media #{$md} {
+    @content;
+  }
+}
+
+;
+
+@mixin desktop {
+  @media #{$xl} {
+    @content
+  }
+}
+
+;
