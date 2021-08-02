@@ -8,8 +8,8 @@ const CallToAction = () => {
                     <h1>Zacznij pomagać! Oddaj niechciane rzeczy w zaufane ręce</h1>
                     <div className="decor"/>
                     <div className="buttons">
-                        <a className="btn">Oddaj rzeczy</a>
-                        <a className="btn">Zorganizuj zbiórkę</a>
+                        <a href="" className="btn">Oddaj rzeczy</a>
+                        <a href="" className="btn">Zorganizuj zbiórkę</a>
                     </div>
                 </div>
             </div>
