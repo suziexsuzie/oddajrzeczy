@@ -1,0 +1,58 @@
+@import "src/scss/settings/colors";
+@import "src/scss/settings/breakpoints";
+
+header {
+  .container {
+    .login, .menu {
+      display: flex;
+      justify-content: flex-end;
+      margin: 0.5rem 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: $text;
+      font-size: 18px;
+      padding: 5px 10px;
+    }
+
+    .login {
+      a {
+        font-size: 0.875rem;
+      }
+    }
+
+    .menu {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      @include tablet {
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+
+      }
+
+      .menu__link {
+        font-size: 1rem;
+        margin: 0.2rem 0.2rem;
+        padding: 0.2rem;
+        align-self: center;
+        border: 0.4px solid $sections-bgc;
+        border-radius: 3px;
+        &:hover {
+          background-color: $sections-bgc;
+        }
+
+        @include tablet {
+          border: none;
+          padding: 0.5rem;
+        }
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

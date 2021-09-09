@@ -1,0 +1,17 @@
+@import "src/scss/settings/breakpoints";
+
+.numbers {
+  background-color: darkorange;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem 0 2rem 0;
+
+  @include tablet {
+    flex-direction: row;
+  }
+  @include desktop {
+    padding: 1rem 0 2.5rem 0;
+  }
+}

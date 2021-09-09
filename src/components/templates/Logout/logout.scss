@@ -1,0 +1,14 @@
+@import "src/scss/settings/breakpoints";
+@import "src/scss/settings/colors";
+
+.logout {
+  margin-top: 6rem;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .btn {
+    color: $text;
+    border-color: $text;
+  }
+}

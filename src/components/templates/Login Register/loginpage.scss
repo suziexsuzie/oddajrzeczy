@@ -1,0 +1,28 @@
+@import "src/scss/settings/breakpoints";
+
+  .logreg__page {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    .content {
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-self: center;
+      @include tablet {
+        width: 30rem;
+      }
+
+
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    .decor {
+      transform: scale(0.8);
+    }
+}

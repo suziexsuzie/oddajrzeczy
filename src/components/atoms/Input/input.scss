@@ -1,0 +1,7 @@
+@import "src/scss/settings/colors";
+
+input  {
+  border: none;
+  border-bottom: 1px solid $text;
+  margin: 0.3rem auto;
+}

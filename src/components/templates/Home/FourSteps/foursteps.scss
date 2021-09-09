@@ -1,0 +1,48 @@
+@import "../../../../scss/settings/colors";
+@import "src/scss/settings/breakpoints";
+
+.four-steps {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.5rem 0;
+
+  .content {
+    background-color: $sections-bgc;
+    background-size: contain;
+
+    .container {
+
+      display: flex;
+      flex-direction: column;
+      @include tablet {
+        flex-direction: row;
+      }
+    }
+  }
+}
+
+.content > div:nth-child(1) {
+  .step__icon {
+    background-image: url("Icon-1@2x.png");
+  }
+}
+
+.content > div:nth-child(2) {
+  .step__icon {
+    background-image: url("Icon-2@2x.png");
+  }
+}
+
+.content > div:nth-child(3) {
+  .step__icon {
+    background-image: url("Icon-3@2x.png");
+  }
+}
+
+.content > div:nth-child(4) {
+  .step__icon {
+    background-image: url("Icon-4@2x.png");
+  }
+}

@@ -1,12 +1,11 @@
 import * as React from "react";
 import "../scss/main.scss";
-import Home from "./Home";
-
+import HomePage from "./HomePage";
 
 const IndexPage = () => {
   return (
-      <Home />
+      <HomePage />
   )
 }
 
-export default IndexPage
+export default IndexPage;

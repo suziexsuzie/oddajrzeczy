@@ -1,0 +1,28 @@
+@import "src/scss/settings/colors";
+@import "src/scss/settings/fonts";
+@import "src/scss/settings/breakpoints";
+
+.btn {
+  display: inline-block;
+  line-height: 150%;
+  letter-spacing: 0.3px;
+  overflow-wrap: break-word;
+  font-family: $font-base;
+  font-weight: 300;
+  font-size: 1.275rem;
+  word-break: keep-all;
+  border: 0.75px solid $decoration;
+  border-radius: 3px;
+  padding: 0.625rem 1rem;
+  margin: 1.5rem auto;
+  color: $decoration;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  &:hover {
+    cursor: pointer;
+  }
+  @include desktop-large {
+font-size: 1.3rem;
+  }
+}

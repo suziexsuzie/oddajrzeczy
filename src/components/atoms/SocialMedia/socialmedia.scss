@@ -1,0 +1,31 @@
+@import "src/scss/settings/breakpoints";
+
+.icons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 2.5rem;
+margin: 0 auto;
+  @include tablet {
+    right: 2rem;
+    bottom: 0.5rem;
+    justify-content: flex-end;
+  }
+  @include desktop {
+
+  }
+  .icon__ig, .icon__fb {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-size: contain;
+    margin: 0.5rem;
+  }
+  .icon__ig {
+    background-image: url("Instagram@2x.png");
+  }
+  .icon__fb {
+    background-image: url("Facebook@2x.png");
+  }
+}

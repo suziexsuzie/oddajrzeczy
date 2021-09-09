@@ -1,0 +1,52 @@
+@import "src/scss/settings/breakpoints";
+
+.header {
+  position: absolute;
+  top: 0;
+}
+
+.cta {
+  display: flex;
+  margin: 2rem auto;
+
+  @include desktop {
+
+    position: relative;
+    background-image: url("Hero Image@2x.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: -400px;
+    height: 700px;
+
+    .container {
+      display: flex;
+      justify-content: flex-end;
+      height: 100%;
+
+      .content {
+        padding: 30px 14px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+
+        .h1 {
+          width: 100%;
+        }
+
+      }
+
+    }
+
+  }
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+  @include tablet {
+    flex-direction: row;
+  }
+}

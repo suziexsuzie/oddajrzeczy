@@ -1,0 +1,44 @@
+@import "src/scss/settings/colors";
+@import "src/scss/settings/breakpoints";
+
+.step {
+  display: flex;
+  flex-direction: column;
+  line-height: 150%;
+  margin: 1.2rem auto;
+
+  .step__icon {
+    content: "";
+    display: block;
+    min-width: 1px;
+    width: 3rem;
+    height: 3rem;
+    background-size: contain;
+    margin: 0.5rem auto;
+    @include tablet {
+      width: 5rem;
+      height: 5rem;
+    }
+  }
+
+  .step__title {
+    font-size: 1.125rem;
+    text-align: center;
+    justify-self: center;
+    vertical-align: center;
+
+    &:after {
+      content: "";
+      display: block;
+      height: 1px;
+      width: 30%;
+      border-bottom: 1px solid $decoration;
+      margin: 0.5rem auto;
+    }
+  }
+
+  .step__description {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
